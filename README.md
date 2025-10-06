@@ -4,13 +4,7 @@
 
 ## Two Pointers
 
-
-| ------------------------------------------------------------------------------------------------------------------------- |
-| [1768-merge-strings-alternatively](https://github.com/AqibNiazi/LeetCode_2025/tree/main/1768-merge-strings-alternatively) |
-
-
-
-
-
+| ------------- |
+| [1768-merge-strings-alternately](https://github.com/AqibNiazi/LeetCode_2025/tree/main/1768-merge-strings-alternately) |
 
 <!---LeetCode Topics End-->
