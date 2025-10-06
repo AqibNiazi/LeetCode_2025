@@ -10,3 +10,4 @@ class Solution:
         result.append(word1[i:])
         result.append(word2[j:])
         return "".join(result)
+     
