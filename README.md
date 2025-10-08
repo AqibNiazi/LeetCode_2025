@@ -7,6 +7,10 @@
 | ------------- |
 | [1929-concatenation-of-array](https://github.com/AqibNiazi/LeetCode_2025/tree/main/1929-concatenation-of-array) |
 
+## Strings
+|  |
+| ------------- |
+| [0014-longest-common-prefix](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0014-longest-common-prefix) |
 
 
 ## Two Pointers
