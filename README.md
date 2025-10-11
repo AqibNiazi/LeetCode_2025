@@ -12,6 +12,11 @@
 | ------------- |
 | [0014-longest-common-prefix](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0014-longest-common-prefix) |
 
+## Hash Table
+|  |
+| ------------- |
+| [0242-valid-anagram](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0242-valid-anagram) |
+
 
 ## Two Pointers
 |  |
