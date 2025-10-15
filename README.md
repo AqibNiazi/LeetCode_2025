@@ -6,6 +6,7 @@
 |  |
 | ------------- |
 | [1929-concatenation-of-array](https://github.com/AqibNiazi/LeetCode_2025/tree/main/1929-concatenation-of-array) |
+| [0049-group-anagrams](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0049-group-anagrams) |
 
 ## Strings
 |  |
