@@ -28,5 +28,6 @@
 | [0027-remove-element](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0027-remove-element) |
 | [0125-valid-palindrome](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0125-valid-palindrome) |
 | [0167-two-sum-II-Input-array-is-sorted](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0167-two-sum-II-Input-array-is-sorted) |
+| [0015-3sum](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0015-3sum) |
 
 <!---LeetCode Topics End-->
