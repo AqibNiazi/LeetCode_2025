@@ -30,5 +30,6 @@
 | [0167-two-sum-II-Input-array-is-sorted](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0167-two-sum-II-Input-array-is-sorted) |
 | [0015-3sum](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0015-3sum) |
 | [0018-4sum](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0018-4sum) |
+| [0189-rotate-array](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0189-rotate-array) |
 
 <!---LeetCode Topics End-->
