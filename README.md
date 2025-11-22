@@ -19,6 +19,12 @@
 | [0242-valid-anagram](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0242-valid-anagram) |
 | [0001-two-sum](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0001-two-sum) |
 
+## Linked List
+|  |
+| ------------- |
+| [0876-middle-of-the-linked-list](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0876-middle-of-the-linked-list) |
+
+
 
 ## Two Pointers
 |  |
