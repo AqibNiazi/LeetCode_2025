@@ -22,6 +22,7 @@
 ## Linked List
 |  |
 | ------------- |
+| [0206-reverse-linked-list](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0206-reverse-linked-list) |
 | [0876-middle-of-the-linked-list](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0876-middle-of-the-linked-list) |
 | [0141-linked-list-cycle](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0141-linked-list-cycle) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0019-remove-nth-node-from-end-of-list) |
@@ -39,4 +40,5 @@
 | [0189-rotate-array](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0189-rotate-array) |
 | [0876-middle-of-the-linked-list](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0876-middle-of-the-linked-list) |
 | [0141-linked-list-cycle](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0141-linked-list-cycle) |
+| [0206-reverse-linked-list](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0206-reverse-linked-list) |
 <!---LeetCode Topics End-->
