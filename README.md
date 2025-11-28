@@ -26,6 +26,7 @@
 | [0876-middle-of-the-linked-list](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0876-middle-of-the-linked-list) |
 | [0141-linked-list-cycle](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0141-linked-list-cycle) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0019-remove-nth-node-from-end-of-list) |
+| [0021-merge-two-sorted-lists](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0021-merge-two-sorted-lists) |
 
 ## Two Pointers
 |  |
