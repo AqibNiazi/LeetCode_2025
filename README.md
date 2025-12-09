@@ -14,6 +14,12 @@
 | ------------- |
 | [0014-longest-common-prefix](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0014-longest-common-prefix) |
 
+## Stack&Queues
+|  |
+| ------------- |
+| [0155-min-stack](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0155-min-stack) |
+| [0020-valid-parentheses](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0020-valid-parentheses) |
+
 ## Hash Table
 |  |
 | ------------- |
