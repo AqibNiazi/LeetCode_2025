@@ -1,22 +1,25 @@
 # Stack Solution
 
+# Time Complexity: O(n+m)
+# Space Complexity: O(n+m)
+
+class Solution:
+    def backspaceCompare(self, s: str, t: str) -> bool:
+        def build(string:str) -> List[str]:
+            stack = []
+            for ch in string:
+                if ch == "#":
+                    if stack:
+                        stack.pop()
+                    # skip else
+                else:
+                    stack.append(ch)
+            return stack
+        return build(s) == build(t)
+
+# Two Pointer Solution
 # Time Complexity: O(n)
-# Space Complexity: O(n)
-
-# class Solution:
-#     def backspaceCompare(self, s: str, t: str) -> bool:
-#         def build(string:str) -> List[str]:
-#             stack = []
-#             for ch in string:
-#                 if ch == "#":
-#                     if stack:
-#                         stack.pop()
-#                     # skip else
-#                 else:
-#                     stack.append(ch)
-#             return stack
-#         return build(s) == build(t)
-
+# Space Complexity: O(1)
 
 from typing import List
 
