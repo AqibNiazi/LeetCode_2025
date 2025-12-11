@@ -96,3 +96,141 @@ class Solution:
             i += 1
         return "".join(stack)
 ```
+---
+
+# Step-by-step explanation of this solution
+
+Nice — this is a clean stack-based solution for **Make The String Great**. I’ll walk through it line-by-line, explain the helper `lower` function, show why the `if` condition detects a canceling pair (same letter, opposite case), run a concrete example, and finish with complexity and a simpler alternative.
+
+---
+
+## What the code does (one-sentence)
+
+It scans `s` left-to-right, using a stack to remove adjacent letter pairs that are the same alphabetic character but in opposite cases (like `'a'` and `'A'`). The final stack joined into a string is the “good” string.
+
+---
+
+## Code with commentary
+
+```py
+class Solution:
+    def makeGood(self, s: str) -> str:
+
+        def lower(c):
+            if ord(c) < ord('a'):
+                return chr(ord('a') + ord(c) - ord('A'))
+            return c
+
+        stack = []
+
+        i = 0
+        while i < len(s):
+            if (stack and stack[-1] != s[i] and lower(stack[-1]) == lower(s[i])):
+                stack.pop()
+            else:
+                stack.append(s[i])
+            i += 1
+        return "".join(stack)
+```
+# Step by Step Explanation
+### `lower(c)` helper
+
+* Purpose: return the lowercase version of the character `c`.
+* Implementation detail:
+
+  * `ord(c) < ord('a')` checks whether `c` is an uppercase letter (because uppercase letters have smaller ASCII/Unicode code points than lowercase).
+  * If uppercase, it converts to lowercase using arithmetic: `chr(ord('a') + ord(c) - ord('A'))`.
+  * Otherwise returns `c` (already lowercase).
+* Effectively `lower(c)` behaves like Python’s built-in `c.lower()`.
+
+### `stack = []`
+
+* We will push characters into `stack`. When we find a canceling pair (top of stack + current char), we `pop()` instead.
+
+### Main loop `while i < len(s):`
+
+* We process characters one by one from left to right; `i` is the index.
+
+### The `if` condition:
+
+```py
+if (stack and stack[-1] != s[i] and lower(stack[-1]) == lower(s[i])):
+    stack.pop()
+else:
+    stack.append(s[i])
+```
+
+This checks three things simultaneously:
+
+1. `stack` — ensure the stack is not empty (otherwise `stack[-1]` would be invalid).
+2. `stack[-1] != s[i]` — ensure the two characters are not *exactly* the same (if they were identical and same case, they should **not** cancel).
+3. `lower(stack[-1]) == lower(s[i])` — ensure that when both are reduced to lowercase, they are the **same letter**.
+
+Taken together: the top-of-stack character and the current character are the **same letter but different cases**. Example: `stack[-1] = 'a'` and `s[i] = 'A'`, or vice versa `'B'` and `'b'`. If so — they cancel, so we `pop()` the stack (removing the previous char) and do not push the current char, effectively removing both.
+
+If the condition is false, we `append` the current character to the stack.
+
+### End
+
+After the loop we `return "".join(stack)` — the characters left form the final “good” string.
+
+---
+
+## Concrete trace (example)
+
+Take `s = "leEeTcOde"` (I’ll use a smaller variant: `s = "aAbBc"`)
+
+Indices and chars: `0:'a' 1:'A' 2:'b' 3:'B' 4:'c'`
+Start: `stack = []`
+
+* `i=0`, char `'a'`: stack empty → append `'a'` → `stack = ['a']`.
+* `i=1`, char `'A'`: `stack` non-empty, `stack[-1] = 'a' != 'A'`, and `lower('a') == lower('A') == 'a'` → condition true → `stack.pop()` → `stack = []`.
+* `i=2`, char `'b'`: stack empty → append `'b'` → `stack = ['b']`.
+* `i=3`, char `'B'`: top `'b' != 'B'` and `lower(...)` equal → pop → `stack = []`.
+* `i=4`, char `'c'`: append `'c'` → `stack = ['c']`.
+
+Return `"c"`.
+
+So `"aAbBc"` → `"c"` (pairs `'a'/'A'` and `'b'/'B'` removed).
+
+---
+
+## Why this works
+
+* The stack enforces *last-opened, first-closed* — whenever two adjacent characters cancel, it may create a new adjacent pair that should cancel as well; the stack naturally handles that by checking the new top with the next input.
+* The condition exactly captures “same letter different case”:
+
+  * `lower(stack[-1]) == lower(s[i])` ensures same letter,
+  * `stack[-1] != s[i]` ensures opposite case (because if they were equal as characters, they would be identical case and should not cancel).
+
+---
+
+## Complexity
+
+* Time: **O(n)** where `n = len(s)` — each character is pushed or popped at most once.
+* Space: **O(n)** worst-case stack size (e.g., if no cancellations occur).
+
+---
+
+## Small improvements / simpler alternative
+
+* The `lower` helper can be replaced by Python’s built-in `c.lower()` for clarity:
+
+```py
+if stack and stack[-1] != c and stack[-1].lower() == c.lower():
+    stack.pop()
+else:
+    stack.append(c)
+```
+
+* Another elegant trick: push the *expected canceling counterpart* for each opening-like char, but with case problems it’s simpler to keep above logic.
+
+---
+
+## Edge cases
+
+* Empty string `s = ""` → returns `""`.
+* All characters cancel pairwise → returns `""`.
+* Non-letter characters are not part of problem constraints; this code assumes only letters (or at least that uppercase/lowercase detection via ord works).
+
+---

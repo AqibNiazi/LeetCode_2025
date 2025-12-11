@@ -20,6 +20,7 @@
 | [0155-min-stack](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0155-min-stack) |
 | [0020-valid-parentheses](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0020-valid-parentheses) |
 | [0844-backspace-string-compare](https://github.com/AqibNiazi/leetcode/tree/main/0844-backspace-string-compare) |
+| [1544-make-the-string-great](https://github.com/AqibNiazi/leetcode/tree/main/1544-make-the-string-great) |
 
 ## Hash Table
 |  |
