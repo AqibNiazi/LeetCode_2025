@@ -11,8 +11,6 @@ A **bad pair** occurs when:
 You are allowed to repeatedly remove adjacent bad pairs until the string becomes good.  
 Return the resulting good string. The result is guaranteed to be unique.
 
----
-
 ### Examples
 
 **Example 1**
@@ -42,7 +40,6 @@ Output: "s"
 
 ```
 
----
 
 ## Intuition
 
@@ -54,8 +51,6 @@ As we iterate through the string:
 - Otherwise, push the current character.
 
 This mimics the process of repeatedly deleting bad adjacent pairs until the string becomes good.
-
----
 
 ## Approach
 
@@ -71,7 +66,6 @@ This mimics the process of repeatedly deleting bad adjacent pairs until the stri
 
 To check character equivalence in lowercase, use a helper function to convert uppercase to lowercase via ASCII math.
 
----
 
 ## Time and Space Complexity
 
@@ -79,8 +73,6 @@ To check character equivalence in lowercase, use a helper function to convert up
   Each character is pushed or popped at most once.
 - **Space Complexity:** `O(n)`
   In the worst case no removals occur, and the stack holds the entire string.
-
----
 
 ## Code Implementation
 
