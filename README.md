@@ -11,6 +11,7 @@
 | [1512-number-of-good-pairs](https://github.com/AqibNiazi/leetcode/tree/main/1512-number-of-good-pairs) |
 | [1470-shuffle-the-array](https://github.com/AqibNiazi/leetcode/tree/main/1470-shuffle-the-array) |
 | [0283-move-zeroes](https://github.com/AqibNiazi/leetcode/tree/main/0283-move-zeroes) |
+| [0485-max-consecutive-ones](https://github.com/AqibNiazi/leetcode/tree/main/0485-max-consecutive-ones) |
 
 ## Strings
 |  |
