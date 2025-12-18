@@ -16,6 +16,7 @@
 ## Strings
 |  |
 | ------------- |
+| [0771-jewels-and-stones](https://github.com/AqibNiazi/leetcode/tree/main/0771-jewels-and-stones) |
 | [0014-longest-common-prefix](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0014-longest-common-prefix) |
 
 ## Stacks
