@@ -19,6 +19,7 @@
 | [0771-jewels-and-stones](https://github.com/AqibNiazi/leetcode/tree/main/0771-jewels-and-stones) |
 | [0344-reverse-string](https://github.com/AqibNiazi/leetcode/tree/main/0344-reverse-string) |
 | [1768-merge-strings-alternately](https://github.com/AqibNiazi/LeetCode_2025/tree/main/1768-merge-strings-alternately) |
+| [0412-fizz-buzz](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0412-fizz-buzz) |
 | [0014-longest-common-prefix](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0014-longest-common-prefix) |
 
 ## Stacks
