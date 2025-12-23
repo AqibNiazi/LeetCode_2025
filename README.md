@@ -23,6 +23,7 @@
 | [0242-valid-anagram](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0242-valid-anagram) |
 | [0014-longest-common-prefix](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0014-longest-common-prefix) |
 | [0459-repeated-substring-pattern](https://github.com/AqibNiazi/leetcode/tree/main/0459-repeated-substring-pattern) |
+| [0205-isomorphic-strings](https://github.com/AqibNiazi/leetcode/tree/main/0205-isomorphic-strings) |
 
 ## Stacks
 |  |
