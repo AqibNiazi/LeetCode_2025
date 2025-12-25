@@ -24,6 +24,7 @@
 | [0014-longest-common-prefix](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0014-longest-common-prefix) |
 | [0459-repeated-substring-pattern](https://github.com/AqibNiazi/leetcode/tree/main/0459-repeated-substring-pattern) |
 | [0205-isomorphic-strings](https://github.com/AqibNiazi/leetcode/tree/main/0205-isomorphic-strings) |
+| [0796-rotate-string](https://github.com/AqibNiazi/leetcode/tree/main/0796-rotate-string) |
 
 ## Stacks
 |  |
