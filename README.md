@@ -38,8 +38,8 @@
 ## Hash Table
 |  |
 | ------------- |
-| [0242-valid-anagram](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0242-valid-anagram) |
 | [0001-two-sum](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0001-two-sum) |
+| [0242-valid-anagram](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0242-valid-anagram) |
 
 ## Linked List
 |  |
