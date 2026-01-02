@@ -35,12 +35,13 @@
 | [1544-make-the-string-great](https://github.com/AqibNiazi/leetcode/tree/main/1544-make-the-string-great) |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/AqibNiazi/leetcode/tree/main/0921-minimum-add-to-make-parentheses-valid) |
 
-## Hash Table
+## Hashmaps
 |  |
 | ------------- |
 | [0001-two-sum](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0001-two-sum) |
 | [0242-valid-anagram](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0242-valid-anagram) |
 | [2215-find-the-difference-of-two-arrays](https://github.com/AqibNiazi/LeetCode_2025/tree/main/2215-find-the-difference-of-two-arrays) |
+| [0496-next-greater-element-I](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0496-next-greater-element-I) |
 
 ## Linked List
 |  |
