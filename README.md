@@ -68,4 +68,5 @@
 | [0876-middle-of-the-linked-list](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0876-middle-of-the-linked-list) |
 | [0141-linked-list-cycle](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0141-linked-list-cycle) |
 | [0206-reverse-linked-list](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0206-reverse-linked-list) |
+| [2570-merge-two-2D-arrays-by-summing-values](https://github.com/AqibNiazi/leetcode/tree/main/2570-merge-two-2D-arrays-by-summing-values) |
 <!---LeetCode Topics End-->
