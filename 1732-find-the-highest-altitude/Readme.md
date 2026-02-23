@@ -33,7 +33,6 @@ Highest altitude = `0`.
 - `1 <= n <= 100`
 - `-100 <= gain[i] <= 100`
 
----
 
 ## Intuition
 
@@ -41,7 +40,6 @@ The biker starts at altitude 0. Each value in the `gain` array represents the ch
 By accumulating these changes step by step, we can track the altitude at each point.
 The highest altitude is simply the maximum value reached during this cumulative process.
 
----
 
 ## Approach
 
@@ -56,7 +54,6 @@ The highest altitude is simply the maximum value reached during this cumulative 
 
 The altitudes are not stored in an array; instead, we compute them on the fly for efficiency.
 
----
 
 ## Complexity
 
@@ -66,7 +63,6 @@ O(n), because we traverse the list once.
 **Space Complexity:**
 O(1), since we do not use any extra data structures and only track two variables.
 
----
 
 ## Code
 
@@ -82,4 +78,3 @@ class Solution:
         return max_alt
 ```
 
----

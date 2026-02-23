@@ -5,6 +5,8 @@
 ## Arrays
 |  |
 | ------------- |
+| [1480-running-sum-of-1d-array](https://github.com/AqibNiazi/LeetCode_2025/tree/main/1480-running-sum-of-1d-array) |
+| [1732-find-the-highest-altitude](https://github.com/AqibNiazi/LeetCode_2025/tree/main/1732-find-the-highest-altitude) |
 | [1929-concatenation-of-array](https://github.com/AqibNiazi/LeetCode_2025/tree/main/1929-concatenation-of-array) |
 | [0049-group-anagrams](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0049-group-anagrams) |
 | [2011-final-value-of-variable](https://github.com/AqibNiazi/LeetCode_2025/tree/main/2011-final-value-of-variable) |
