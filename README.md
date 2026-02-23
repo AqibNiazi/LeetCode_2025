@@ -8,6 +8,7 @@
 | [1480-running-sum-of-1d-array](https://github.com/AqibNiazi/LeetCode_2025/tree/main/1480-running-sum-of-1d-array) |
 | [1732-find-the-highest-altitude](https://github.com/AqibNiazi/LeetCode_2025/tree/main/1732-find-the-highest-altitude) |
 | [2011-final-value-of-variable](https://github.com/AqibNiazi/LeetCode_2025/tree/main/2011-final-value-of-variable) |
+| [977-squares-of-a-sorted-array](https://github.com/AqibNiazi/leetcode/tree/main/977-squares-of-a-sorted-array) |
 | [1929-concatenation-of-array](https://github.com/AqibNiazi/LeetCode_2025/tree/main/1929-concatenation-of-array) |
 | [0049-group-anagrams](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0049-group-anagrams) |
 | [1512-number-of-good-pairs](https://github.com/AqibNiazi/leetcode/tree/main/1512-number-of-good-pairs) |
