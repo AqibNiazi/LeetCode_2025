@@ -39,7 +39,6 @@ Output: `0`
 - `1 <= operations.length <= 100`
 - Each string is one of `"++X"`, `"X++"`, `"--X"`, `"X--"`
 
----
 
 ## Intuition
 
@@ -47,7 +46,6 @@ Each operation either increments or decrements the variable `X` by exactly 1. Th
 
 The simplest way is to traverse all operations and adjust the value of `X` depending on whether the operation contains `'+'` or `'-'`.
 
----
 
 ## Approach
 
@@ -61,7 +59,6 @@ The simplest way is to traverse all operations and adjust the value of `X` depen
 
 This requires only a single pass through the list.
 
----
 
 ## Complexity
 
@@ -71,7 +68,6 @@ O(n), where n is the number of operations.
 **Space Complexity:**
 O(1), since only one variable is used.
 
----
 
 ## Code
 
@@ -87,4 +83,3 @@ class Solution:
         return x
 ```
 
----
