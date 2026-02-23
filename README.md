@@ -17,7 +17,7 @@
 
 ## Strings
 |  |
-| [Level-0](https://github.com/devweekends/DW-Fellowship-DSA-Roadmap/tree/main/Level%200/0%20Simulation%20-%20Arrays) |
+| [Level-0-Sheet](https://github.com/devweekends/DW-Fellowship-DSA-Roadmap/tree/main/Level%200/0%20Simulation%20-%20Arrays) |
 | [0771-jewels-and-stones](https://github.com/AqibNiazi/leetcode/tree/main/0771-jewels-and-stones) |
 | [0344-reverse-string](https://github.com/AqibNiazi/leetcode/tree/main/0344-reverse-string) |
 | [1768-merge-strings-alternately](https://github.com/AqibNiazi/LeetCode_2025/tree/main/1768-merge-strings-alternately) |
