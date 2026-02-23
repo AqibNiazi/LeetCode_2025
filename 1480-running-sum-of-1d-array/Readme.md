@@ -29,13 +29,11 @@ Output: `[3,4,6,16,17]`
 - `1 <= nums.length <= 1000`
 - `-10^6 <= nums[i] <= 10^6`
 
----
 
 ## Intuition
 
 To compute the running sum, each element should represent the total sum of all elements before it including itself. Instead of recalculating the sum every time, we can build the result progressively by adding the previous running total to the current number.
 
----
 
 ## Approach
 
@@ -43,7 +41,6 @@ Start from index `1` because index `0` is already its own running sum.
 For every index `i`, update `nums[i]` by adding the value of `nums[i - 1]`, which now holds the running sum up to the previous position.
 Continue until the end of the array and return the updated list.
 
----
 
 ## Complexity
 
@@ -53,7 +50,6 @@ O(n), because we traverse the array once.
 **Space Complexity:**
 O(1), because we update the array in-place without using extra space.
 
----
 
 ## Code
 
