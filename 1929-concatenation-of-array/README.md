@@ -11,7 +11,6 @@ Specifically, `ans` is the concatenation of two `nums` arrays.
 
 Return the array `ans`.
 
----
 
 ## Example 1
 
@@ -33,7 +32,6 @@ ans = [nums[0], nums[1], nums[2], nums[3], nums[0], nums[1], nums[2], nums[3]]
 ans = [1,3,2,1,1,3,2,1]
 ```
 
----
 
 ## Constraints
 
@@ -41,7 +39,6 @@ ans = [1,3,2,1,1,3,2,1]
 - `1 <= n <= 1000`
 - `1 <= nums[i] <= 1000`
 
----
 
 ## Solution Explanation
 
@@ -55,7 +52,6 @@ To achieve this:
 
 This ensures that all elements from the first and second copies appear in the same order as in the original array.
 
----
 
 ## Complexity Analysis
 
@@ -65,7 +61,6 @@ This ensures that all elements from the first and second copies appear in the sa
 - **Space Complexity:** `O(n)`
   A new list of size `2n` is created.
 
----
 
 ## Code Implementation
 
@@ -79,4 +74,3 @@ class Solution:
         return ans
 ```
 
----
