@@ -9,7 +9,6 @@ A pair `(i, j)` is called **good** if:
 - `nums[i] == nums[j]`
 - `i < j`
 
----
 
 ## Examples
 
@@ -41,14 +40,12 @@ Output: 0
 
 ```
 
----
 
 ## Constraints
 
 - `1 <= nums.length <= 100`
 - `1 <= nums[i] <= 100`
 
----
 
 ## Intuition
 
@@ -57,7 +54,6 @@ So instead of checking all pairs, we can keep track of how many times we have al
 
 Each time we see a number again, it forms as many new good pairs as its current frequency.
 
----
 
 ## Approach
 
@@ -68,7 +64,6 @@ Each time we see a number again, it forms as many new good pairs as its current 
    - Increment its frequency.
 4. Return the total count of good pairs.
 
----
 
 ## Solution (Python)
 
@@ -88,7 +83,6 @@ class Solution:
         return good_pairs
 ```
 
----
 
 ## Complexity Analysis
 
@@ -98,4 +92,3 @@ class Solution:
 - **Space Complexity:** `O(n)`
   Extra space is used for the hash map to store frequencies.
 
----
