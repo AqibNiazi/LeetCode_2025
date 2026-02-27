@@ -18,8 +18,6 @@ Your task is to return the array rearranged as:
 
 ```
 
----
-
 ## Examples
 
 **Example 1**
@@ -89,8 +87,6 @@ class Solution:
 
 - **Time Complexity:** `O(n)`
 - **Space Complexity:** `O(n)`
-
----
 
 ## Solution 2: Using Bit Manipulation (In-place)
 
