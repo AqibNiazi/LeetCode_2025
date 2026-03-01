@@ -13,8 +13,9 @@
 | [1512-number-of-good-pairs](https://github.com/AqibNiazi/leetcode/tree/main/1512-number-of-good-pairs) |
 | [1470-shuffle-the-array](https://github.com/AqibNiazi/leetcode/tree/main/1470-shuffle-the-array) |
 | [0283-move-zeroes](https://github.com/AqibNiazi/leetcode/tree/main/0283-move-zeroes) |
-| [0049-group-anagrams](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0049-group-anagrams) |
 | [0485-max-consecutive-ones](https://github.com/AqibNiazi/leetcode/tree/main/0485-max-consecutive-ones) |
+| [0189-rotate-array](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0189-rotate-array) |
+| [0049-group-anagrams](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0049-group-anagrams) |
 
 ## Strings
 |  |

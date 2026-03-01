@@ -4,7 +4,6 @@
 
 Given an integer array `nums`, rotate the array to the right by `k` steps, where `k` is non-negative.
 
----
 
 ### Example 1
 
@@ -20,7 +19,6 @@ Given an integer array `nums`, rotate the array to the right by `k` steps, where
 - Rotate 2 steps to the right: `[6,7,1,2,3,4,5]`
 - Rotate 3 steps to the right: `[5,6,7,1,2,3,4]`
 
----
 
 ### Example 2
 
@@ -35,7 +33,6 @@ Given an integer array `nums`, rotate the array to the right by `k` steps, where
 - Rotate 1 step to the right: `[99,-1,-100,3]`
 - Rotate 2 steps to the right: `[3,99,-1,-100]`
 
----
 
 ### Constraints
 
@@ -43,7 +40,6 @@ Given an integer array `nums`, rotate the array to the right by `k` steps, where
 - `-2³¹ <= nums[i] <= 2³¹ - 1`
 - `0 <= k <= 10⁵`
 
----
 
 ### Follow-up
 
@@ -55,7 +51,6 @@ Try to come up with as many solutions as possible. There are at least three diff
 
 Could you do it **in-place with O(1) extra space**?
 
----
 
 ## Intuition
 
@@ -68,7 +63,6 @@ We can achieve this efficiently using the **reversal algorithm**:
 2. Reverse the first `k` elements.
 3. Reverse the remaining elements.
 
----
 
 ## Approach
 
@@ -78,7 +72,6 @@ We can achieve this efficiently using the **reversal algorithm**:
 4. Reverse the **remaining elements** from `k` to the end.
 5. The array is now rotated in-place with no extra space.
 
----
 
 ## Code Implementation
 
@@ -106,7 +99,6 @@ class Solution:
             l, r = l + 1, r - 1
 ```
 
----
 
 ## Complexity Analysis
 
@@ -118,7 +110,6 @@ class Solution:
 
   - The rotation is done in-place with no additional data structures.
 
----
 
 ## Key Takeaways
 
