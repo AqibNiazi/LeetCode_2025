@@ -14,8 +14,6 @@ Notes:
 - Letters are case-sensitive (`"a"` is different from `"A"`).
 - All characters in `jewels` are unique.
 
----
-
 ### Example 1
 
 **Input**
