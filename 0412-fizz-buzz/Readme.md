@@ -1,10 +1,5 @@
 # 412. Fizz Buzz
 
-**Difficulty:** Easy  
-**Topics:** Math, Simulation
-
----
-
 ## Problem Statement
 
 Given an integer `n`, return a string array `answer` (1-indexed) where:
@@ -14,7 +9,6 @@ Given an integer `n`, return a string array `answer` (1-indexed) where:
 - `answer[i] == "Buzz"` if `i` is divisible by 5.
 - `answer[i] == i` (as a string) if none of the above conditions are true.
 
----
 
 ## Examples
 
@@ -59,7 +53,6 @@ Checking divisibility by `3` and `5` allows us to determine whether to append `"
 4. Append the result for each number to the list.
 5. Return the final list.
 
----
 
 ## Solution (Python)
 
