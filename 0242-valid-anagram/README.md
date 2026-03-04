@@ -1,15 +1,9 @@
 # 242. Valid Anagram
 
-**Difficulty:** Easy  
-**Topics:** Hash Table, String, Sorting
-
----
-
 ## Problem Statement
 
 Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `false` otherwise.
 
----
 
 ### Example 1
 
@@ -18,7 +12,6 @@ Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `f
 **Output:**  
 `true`
 
----
 
 ### Example 2
 
@@ -27,20 +20,17 @@ Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `f
 **Output:**  
 `false`
 
----
 
 ### Constraints
 
 - `1 <= s.length, t.length <= 5 * 10⁴`
 - `s` and `t` consist of lowercase English letters.
 
----
 
 ### Follow-up
 
 What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
 
----
 
 ## Intuition
 
@@ -49,7 +39,6 @@ If two strings are anagrams, sorting both will produce identical results, or cou
 
 Instead of sorting (which takes O(n log n) time), we can count the frequency of each character using hash maps (dictionaries in Python) for a more optimal O(n) solution.
 
----
 
 ## Approach
 
@@ -63,7 +52,6 @@ Instead of sorting (which takes O(n log n) time), we can count the frequency of 
 
 This approach ensures we only traverse the strings once and perform constant-time lookups and updates.
 
----
 
 ## Complexity
 
@@ -74,7 +62,6 @@ This approach ensures we only traverse the strings once and perform constant-tim
   Although we use two hash maps, the number of possible lowercase English letters is constant (26).  
   Hence, space usage is constant relative to input size.
 
----
 
 ## Code Implementation
 
@@ -97,10 +84,6 @@ class Solution:
         return True
 ```
 
-````
-
----
-
 ## Alternative Approaches
 
 ### 1. Sorting-Based
@@ -119,10 +102,8 @@ return sorted(s) == sorted(t)
 Use one dictionary to increment for `s` and decrement for `t`, then check if all counts are zero.
 This reduces space and code redundancy.
 
----
-
 ## Follow-Up: Unicode Support
 
 For Unicode strings, we can still use the dictionary approach since Python’s dictionary supports Unicode keys.
 No change is required other than ensuring we handle characters beyond the ASCII range properly.
-````
+
