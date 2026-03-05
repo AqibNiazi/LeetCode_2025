@@ -1,18 +1,11 @@
 # 125. Valid Palindrome
 
-**Difficulty:** Easy  
-**Topics:** Two Pointers, String
-
----
-
 ## Problem Statement
 
 A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward.  
 Alphanumeric characters include letters and numbers.
 
 Given a string `s`, return `true` if it is a palindrome, or `false` otherwise.
-
----
 
 ### Example 1
 
@@ -23,8 +16,6 @@ Given a string `s`, return `true` if it is a palindrome, or `false` otherwise.
 **Explanation:**  
 After cleaning, the string becomes `"amanaplanacanalpanama"`, which reads the same backward.
 
----
-
 ### Example 2
 
 **Input:**  
@@ -33,8 +24,6 @@ After cleaning, the string becomes `"amanaplanacanalpanama"`, which reads the sa
 `false`  
 **Explanation:**  
 After cleaning, the string becomes `"raceacar"`, which is not a palindrome.
-
----
 
 ### Example 3
 
@@ -45,14 +34,10 @@ After cleaning, the string becomes `"raceacar"`, which is not a palindrome.
 **Explanation:**  
 After removing non-alphanumeric characters, the string is empty `""`, which is a palindrome.
 
----
-
 ### Constraints
 
 - `1 <= s.length <= 2 * 10⁵`
 - `s` consists only of printable ASCII characters.
-
----
 
 ## Intuition
 
@@ -61,8 +46,6 @@ However, in this problem, we must **ignore cases** and **non-alphanumeric charac
 
 So, the idea is to compare characters from both ends — moving inward — and only consider valid alphanumeric characters.  
 If all corresponding pairs match (case-insensitive), the string is a palindrome.
-
----
 
 ## Approach
 
@@ -79,7 +62,6 @@ If all corresponding pairs match (case-insensitive), the string is a palindrome.
 
 We also define a helper function `alphaNum()` to manually check if a character is alphanumeric using ASCII values, which avoids using built-in methods and maintains full control over validation.
 
----
 
 ## Complexity
 
@@ -88,8 +70,6 @@ We also define a helper function `alphaNum()` to manually check if a character i
 
 - **Space Complexity:** `O(1)`  
   We only use pointers and a few variables — no additional data structures.
-
----
 
 ## Code Implementation
 
@@ -114,8 +94,6 @@ class Solution:
                 ord('0') <= ord(c) <= ord('9'))
 ```
 
----
-
 ## Example Walkthrough
 
 **Input:**
@@ -131,7 +109,6 @@ class Solution:
 
 **Output:** `True`
 
----
 
 ## Summary
 
