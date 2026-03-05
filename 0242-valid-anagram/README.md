@@ -4,66 +4,59 @@
 
 Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `false` otherwise.
 
-
 ### Example 1
 
-**Input:**  
-`s = "anagram", t = "nagaram"`  
-**Output:**  
-`true`
+**Input:**
+`s = "anagram", t = "nagaram"`
 
+**Output:**
+`true`
 
 ### Example 2
 
-**Input:**  
-`s = "rat", t = "car"`  
-**Output:**  
+**Input:**
+`s = "rat", t = "car"`
+
+**Output:**
 `false`
 
+## Constraints
 
-### Constraints
-
-- `1 <= s.length, t.length <= 5 * 10⁴`
-- `s` and `t` consist of lowercase English letters.
+* `1 <= s.length, t.length <= 5 * 10⁴`
+* `s` and `t` consist of lowercase English letters.
 
 
-### Follow-up
+## Follow-up
 
 What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
 
+# Intuition
 
-## Intuition
+An anagram means both strings contain the **same characters** with the **same frequency**.
 
-An anagram means both strings contain the **same characters** with the **same frequency**.  
-If two strings are anagrams, sorting both will produce identical results, or counting the occurrences of each character will yield identical frequency maps.
+If two strings are anagrams:
 
-Instead of sorting (which takes O(n log n) time), we can count the frequency of each character using hash maps (dictionaries in Python) for a more optimal O(n) solution.
+* They must have equal length.
+* Every character must appear the same number of times in both strings.
 
+Instead of sorting (which takes `O(n log n)` time), we can count character frequencies using hash maps (Python dictionaries) to achieve an `O(n)` time solution.
+
+
+# Main Approach — Two Dictionary Method
 
 ## Approach
 
-1. If the lengths of `s` and `t` differ, they cannot be anagrams — return `False`.
-2. Create two dictionaries, `countS` and `countT`, to store character frequencies for `s` and `t`.
-3. Iterate through each character:
-   - Increment its count in both dictionaries.
-4. After populating the dictionaries, compare them:
-   - If every character count in `s` matches its corresponding count in `t`, return `True`.
-   - Otherwise, return `False`.
+1. If the lengths of `s` and `t` differ, return `False`.
+2. Create two dictionaries:
 
-This approach ensures we only traverse the strings once and perform constant-time lookups and updates.
-
-
-## Complexity
-
-- **Time Complexity:** `O(n)`  
-  We iterate once through both strings of length `n`.
-
-- **Space Complexity:** `O(1)`  
-  Although we use two hash maps, the number of possible lowercase English letters is constant (26).  
-  Hence, space usage is constant relative to input size.
+   * `countS` → stores frequency of characters in `s`
+   * `countT` → stores frequency of characters in `t`
+3. Traverse both strings simultaneously and update counts.
+4. Compare both dictionaries.
+5. If they are equal, return `True`; otherwise, return `False`.
 
 
-## Code Implementation
+## Code Implementation (Two Dictionaries)
 
 ```python
 class Solution:
@@ -77,33 +70,96 @@ class Solution:
             countS[s[i]] = 1 + countS.get(s[i], 0)
             countT[t[i]] = 1 + countT.get(t[i], 0)
 
-        for c in countS:
-            if countS[c] != countT.get(c, 0):
+        return countS == countT
+```
+
+
+## Complexity Analysis
+
+* **Time Complexity:** `O(n)`
+  We iterate once through both strings.
+
+* **Space Complexity:** `O(1)`
+  Since only 26 lowercase letters exist, dictionary size is bounded.
+
+
+# Alternative Approach — One Dictionary (Optimized)
+
+Instead of maintaining two dictionaries, we can use **one hash map**.
+
+### Idea:
+
+* Increment counts for characters in `s`.
+* Decrement counts for characters in `t`.
+* If any count becomes negative or a character doesn’t exist → not an anagram.
+
+This reduces extra space usage and avoids dictionary comparison at the end.
+
+
+## Code Implementation (Single Dictionary)
+
+```python
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
+
+        count = {}
+
+        # Count characters in s
+        for char in s:
+            count[char] = count.get(char, 0) + 1
+
+        # Subtract counts using t
+        for char in t:
+            if char not in count:
+                return False
+            count[char] -= 1
+            if count[char] < 0:
                 return False
 
         return True
 ```
 
-## Alternative Approaches
 
-### 1. Sorting-Based
+## Why This Is Slightly Better
 
-Compare sorted versions of `s` and `t`.
+* Uses only **one dictionary**
+* No final dictionary comparison
+* Slightly cleaner logic
+* Same `O(n)` time complexity
+
+
+# Sorting-Based Approach (Less Optimal)
 
 ```python
 return sorted(s) == sorted(t)
 ```
 
-**Time Complexity:** `O(n log n)`
-**Space Complexity:** `O(1)` or `O(n)` depending on sorting implementation.
+### Complexity
 
-### 2. Single Hash Map Optimization
+* **Time Complexity:** `O(n log n)`
+* **Space Complexity:** Depends on sorting implementation
 
-Use one dictionary to increment for `s` and decrement for `t`, then check if all counts are zero.
-This reduces space and code redundancy.
+This is simpler but slower due to sorting.
 
-## Follow-Up: Unicode Support
 
-For Unicode strings, we can still use the dictionary approach since Python’s dictionary supports Unicode keys.
-No change is required other than ensuring we handle characters beyond the ASCII range properly.
+# Follow-Up: Unicode Support
+
+If inputs contain Unicode characters:
+
+* The dictionary-based solution still works.
+* Python dictionaries support Unicode keys.
+* Space complexity becomes `O(k)` where `k` is the number of unique characters.
+
+No structural change is required — only ensure you're not relying on fixed-size arrays of 26 characters.
+
+
+# Final Comparison
+
+| Approach         | Time       | Space | Recommended      |
+| ---------------- | ---------- | ----- | ---------------- |
+| Two Dictionaries | O(n)       | O(1)  | ✅ Main           |
+| One Dictionary   | O(n)       | O(1)  | ⭐ More Optimized |
+| Sorting          | O(n log n) | O(1)  | ❌ Slower         |
 
