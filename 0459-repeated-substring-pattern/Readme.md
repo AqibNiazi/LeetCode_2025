@@ -47,7 +47,6 @@ If a string is formed by repeating a smaller substring, then:
 
 We only need to check substring lengths up to half of the string length, because a repeating substring cannot be longer than that.
 
----
 
 ### Approach
 
@@ -62,7 +61,6 @@ We only need to check substring lengths up to half of the string length, because
 
 4. If no valid substring works, return `False`.
 
----
 
 ### Python Code
 
@@ -85,8 +83,6 @@ class Solution:
                     times -= 1
         return False
 ```
-
----
 
 ### Complexity Analysis
 
