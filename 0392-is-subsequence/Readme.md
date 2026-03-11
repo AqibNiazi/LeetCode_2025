@@ -32,7 +32,6 @@ Output: false
 - `0 <= t.length <= 10^4`
 - `s` and `t` consist of lowercase English letters only
 
----
 
 ## Solution
 
@@ -47,7 +46,6 @@ We can use two pointers:
 
 We move through `t` and try to match characters from `s` in order.
 
----
 
 ### Approach
 
@@ -57,7 +55,6 @@ We move through `t` and try to match characters from `s` in order.
    - Always move pointer `j` forward.
 3. If pointer `i` reaches the end of `s`, it means all characters of `s` were found in order.
 
----
 
 ### Code
 
@@ -70,8 +67,7 @@ class Solution:
             if s[i] == t[j]:
                 i += 1
             j += 1
-
-        return i == len(s)
+        return True if i == len(s) else False
 ```
 
 ### Complexity Analysis
