@@ -27,7 +27,6 @@ Output: false
 - `1 <= s.length, goal.length <= 100`
 - `s` and `goal` consist of lowercase English letters
 
----
 
 ## Intuition
 
@@ -36,7 +35,6 @@ If no rotation matches `goal`, then it is not possible.
 
 Another observation is that if `goal` is a rotation of `s`, then `goal` must be a substring of `s + s`.
 
----
 
 ## Approach 1: Brute Force (Simulate Rotations)
 
@@ -68,7 +66,6 @@ class Solution:
   Each rotation takes `O(n)` and we do it `n` times.
 - **Space Complexity:** `O(1)` (ignoring string slicing cost)
 
----
 
 ## Approach 2: Optimized (String Concatenation Trick)
 
@@ -96,7 +93,6 @@ class Solution:
 - **Time Complexity:** `O(n)`
 - **Space Complexity:** `O(n)` for concatenated string
 
----
 
 ## Summary
 
