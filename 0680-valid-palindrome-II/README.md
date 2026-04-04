@@ -31,7 +31,6 @@ Output: false
 - `1 <= s.length <= 10⁵`
 - `s` consists of lowercase English letters.
 
----
 
 ## Intuition
 
@@ -39,7 +38,6 @@ When checking if a string is a palindrome, we compare characters from both ends 
 If all characters match, it’s already a palindrome.
 However, if we find a mismatch, we have one chance to skip either the left or right character and check if the rest forms a palindrome.
 
----
 
 ## Approach
 
@@ -59,14 +57,12 @@ However, if we find a mismatch, we have one chance to skip either the left or ri
 
 5. If no mismatches occur, the string is already a palindrome, so return `True`.
 
----
 
 ## Complexity Analysis
 
 - **Time Complexity:** `O(n)` — Each character is compared at most once.
 - **Space Complexity:** `O(1)` — Constant space used for two pointers.
 
----
 
 ## Code Implementation
 
@@ -82,7 +78,6 @@ class Solution:
         return True
 ```
 
----
 
 ## Example Walkthrough
 
@@ -97,7 +92,6 @@ class Solution:
 
 Result: `True`
 
----
 
 ## Summary
 
