@@ -49,6 +49,7 @@
 | [2215-find-the-difference-of-two-arrays](https://github.com/AqibNiazi/LeetCode_2025/tree/main/2215-find-the-difference-of-two-arrays) |
 | [0496-next-greater-element-I](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0496-next-greater-element-I) |
 | [0268-missing-number](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0268-missing-number) |
+| [1832-sentence-Is-pangram](https://github.com/AqibNiazi/LeetCode_2025/tree/main/1832-sentence-Is-pangram) |
 
 ## Linked List
 |  |
@@ -58,6 +59,7 @@
 | [0141-linked-list-cycle](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0141-linked-list-cycle) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0019-remove-nth-node-from-end-of-list) |
 | [0021-merge-two-sorted-lists](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0021-merge-two-sorted-lists) |
+
 
 ## Two Pointers
 |  |
