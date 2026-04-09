@@ -12,8 +12,6 @@ You are given two **distinct** integer arrays `nums1` and `nums2`, where:
 For each element in `nums1`, find its next greater element in `nums2`.
 If no such element exists, return `-1` for that position.
 
----
-
 ## Examples
 
 ### Example 1
@@ -54,16 +52,12 @@ nums2 = [1,2,3,4]
 
 ```
 
----
-
 ## Constraints
 
 - `1 <= nums1.length <= nums2.length <= 1000`
 - `0 <= nums1[i], nums2[i] <= 10^4`
 - All integers in `nums1` and `nums2` are unique
 - All elements of `nums1` appear in `nums2`
-
----
 
 ## Intuition
 
@@ -75,8 +69,6 @@ To optimize:
 - A **monotonic decreasing stack** helps track elements waiting for a greater value
 - Since we only care about elements in `nums1`, we store their indices for quick lookup
 
----
-
 ## Approach
 
 1. Create a hashmap to store the index of each value in `nums1`
@@ -87,8 +79,6 @@ To optimize:
      - Pop from the stack and update its next greater value in the result
    - If the current number exists in `nums1`, push it onto the stack
 5. Return the result array
-
----
 
 ## Solution Code
 
@@ -110,22 +100,16 @@ class Solution:
         return res
 ```
 
----
-
 ## Complexity Analysis
 
 - **Time Complexity:** `O(n + m)`
-
   - `n = len(nums1)`
   - `m = len(nums2)`
   - Each element is pushed and popped from the stack at most once
 
 - **Space Complexity:** `O(n)`
-
   - Hashmap for `nums1` indices
   - Stack for tracking elements
-
----
 
 ## Key Takeaways
 
