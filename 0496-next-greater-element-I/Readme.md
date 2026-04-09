@@ -6,11 +6,12 @@ The **next greater element** of some element `x` in an array is the first elemen
 
 You are given two **distinct** integer arrays `nums1` and `nums2`, where:
 
-- `nums1` is a subset of `nums2`
-- All elements are unique
+* `nums1` is a subset of `nums2`
+* All elements are unique
 
 For each element in `nums1`, find its next greater element in `nums2`.
 If no such element exists, return `-1` for that position.
+
 
 ## Examples
 
@@ -19,18 +20,14 @@ If no such element exists, return `-1` for that position.
 **Input**
 
 ```
-
 nums1 = [4,1,2]
 nums2 = [1,3,4,2]
-
 ```
 
 **Output**
 
 ```
-
 [-1,3,-1]
-
 ```
 
 ### Example 2
@@ -38,49 +35,113 @@ nums2 = [1,3,4,2]
 **Input**
 
 ```
-
 nums1 = [2,4]
 nums2 = [1,2,3,4]
-
 ```
 
 **Output**
 
 ```
-
 [3,-1]
-
 ```
+
+
 
 ## Constraints
 
-- `1 <= nums1.length <= nums2.length <= 1000`
-- `0 <= nums1[i], nums2[i] <= 10^4`
-- All integers in `nums1` and `nums2` are unique
-- All elements of `nums1` appear in `nums2`
+* `1 <= nums1.length <= nums2.length <= 1000`
+* `0 <= nums1[i], nums2[i] <= 10^4`
+* All integers are unique
+* All elements of `nums1` appear in `nums2`
+
+
+
+# 🧠 Brute Force Solution
 
 ## Intuition
 
-A brute-force solution would check, for every element in `nums1`, all elements to the right in `nums2`. This would be inefficient.
+The most straightforward idea is:
 
-To optimize:
+* For each element in `nums1`, locate it in `nums2`
+* Then scan all elements **to the right** in `nums2`
+* The first greater element found is the answer
+* If none exists → return `-1`
 
-- We want to **precompute the next greater element** for elements in `nums2`
-- A **monotonic decreasing stack** helps track elements waiting for a greater value
-- Since we only care about elements in `nums1`, we store their indices for quick lookup
+This directly follows the problem definition but is inefficient due to repeated scanning.
+
 
 ## Approach
 
-1. Create a hashmap to store the index of each value in `nums1`
-2. Initialize a result array with `-1` for all elements
-3. Use a stack to keep track of elements from `nums2` whose next greater element is not yet found
-4. Traverse `nums2`:
-   - While the stack is not empty and the current number is greater than the top of the stack:
-     - Pop from the stack and update its next greater value in the result
-   - If the current number exists in `nums1`, push it onto the stack
-5. Return the result array
+1. Create a hashmap to store indices of elements in `nums1`
+2. Initialize result array with `-1`
+3. Traverse `nums2`:
 
-## Solution Code
+   * If current element exists in `nums1`, start checking its right side
+   * Find the first greater element and update result
+4. Return result array
+
+
+## Brute Force Code
+
+```python
+class Solution:
+    def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        nums1Idx = {n: i for i, n in enumerate(nums1)}
+        result = [-1] * len(nums1)
+
+        for i in range(len(nums2)):
+            if nums2[i] not in nums1Idx:
+                continue
+
+            for j in range(i + 1, len(nums2)):
+                if nums2[j] > nums2[i]:
+                    idx = nums1Idx[nums2[i]]
+                    result[idx] = nums2[j]
+                    break
+
+        return result
+```
+
+
+## Complexity Analysis (Brute Force)
+
+* **Time Complexity:** `O(n * m)`
+
+  * For each element, we may scan the rest of the array
+* **Space Complexity:** `O(n)`
+
+  * Hashmap + result array
+
+
+# ⚡ Efficient Solution (Monotonic Stack)
+
+## Intuition
+
+Brute force wastes time by repeatedly scanning.
+
+To optimize:
+
+* We compute next greater elements in **one pass**
+* Use a **monotonic decreasing stack**
+* Store only elements from `nums1` that we care about
+* When a greater element appears, resolve pending elements
+
+
+## Approach
+
+1. Store indices of `nums1` in hashmap
+2. Initialize result array with `-1`
+3. Use a stack to track unresolved elements
+4. Traverse `nums2`:
+
+   * While stack not empty and current > stack top:
+
+     * Pop and update result
+   * If current element is in `nums1`, push to stack
+5. Return result
+
+
+## Efficient Solution Code
 
 ```python
 class Solution:
@@ -94,25 +155,32 @@ class Solution:
                 val = stack.pop()
                 idx = nums1Idx[val]
                 res[idx] = curr
+
             if curr in nums1Idx:
                 stack.append(curr)
 
         return res
 ```
 
-## Complexity Analysis
 
-- **Time Complexity:** `O(n + m)`
-  - `n = len(nums1)`
-  - `m = len(nums2)`
-  - Each element is pushed and popped from the stack at most once
+## Complexity Analysis (Efficient)
 
-- **Space Complexity:** `O(n)`
-  - Hashmap for `nums1` indices
-  - Stack for tracking elements
+* **Time Complexity:** `O(n + m)`
 
-## Key Takeaways
+  * Each element is processed once
+* **Space Complexity:** `O(n)`
 
-- Monotonic stacks are very effective for **next greater / smaller element** problems
-- Hashmaps help reduce lookup time from `O(n)` to `O(1)`
-- This approach efficiently satisfies the follow-up requirement
+  * Stack + hashmap
+
+
+## 🚀 Key Takeaways
+
+* Brute force is simple but inefficient (`O(n*m)`)
+* Monotonic stack reduces complexity to **linear time**
+* Very common pattern for:
+
+  * Next Greater Element
+  * Next Smaller Element
+  * Stock Span problems
+
+
