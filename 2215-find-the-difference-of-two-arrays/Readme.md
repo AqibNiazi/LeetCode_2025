@@ -9,7 +9,6 @@ Given two 0-indexed integer arrays `nums1` and `nums2`, return a list `answer` o
 
 The integers in the result lists can be returned in **any order**.
 
----
 
 ## Examples
 
@@ -31,14 +30,11 @@ Output: [[3],[]]
 
 ```
 
----
-
 ## Constraints
 
 - `1 <= nums1.length, nums2.length <= 1000`
 - `-1000 <= nums1[i], nums2[i] <= 1000`
 
----
 
 ## Intuition
 
@@ -50,7 +46,6 @@ By converting both arrays into sets:
 - We can quickly identify elements that exist in one array but not the other.
 - Sets also automatically handle duplicates, ensuring the result contains only distinct values.
 
----
 
 ## Approach
 
@@ -59,7 +54,6 @@ By converting both arrays into sets:
 3. Traverse `nums2` and collect elements that are **not** in `nums1Set`.
 4. Convert the result sets into lists and return them as a list of two lists.
 
----
 
 ## Solution (Python)
 
@@ -80,7 +74,6 @@ class Solution:
         return [list(res1), list(res2)]
 ```
 
----
 
 ## Complexity Analysis
 
@@ -90,7 +83,6 @@ class Solution:
 - **Space Complexity:** `O(n + m)`
   due to the use of sets for storing unique elements.
 
----
 
 ## Key Takeaway
 
