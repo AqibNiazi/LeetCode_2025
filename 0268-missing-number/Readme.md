@@ -4,7 +4,6 @@
 
 Given an array `nums` containing `n` distinct numbers in the range `[0, n]`, return the only number in the range that is missing from the array.
 
----
 
 ## Examples
 
@@ -35,7 +34,6 @@ Output: 8
 
 ```
 
----
 
 ## Constraints
 
@@ -44,7 +42,6 @@ Output: 8
 - `0 <= nums[i] <= n`
 - All values in `nums` are unique
 
----
 
 ## Solution 1: Using Set
 
@@ -74,7 +71,6 @@ class Solution:
 - **Time Complexity:** `O(n)`
 - **Space Complexity:** `O(n)`
 
----
 
 ## Solution 2: Using Sum Formula
 
@@ -110,7 +106,6 @@ class Solution:
 - **Time Complexity:** `O(n)`
 - **Space Complexity:** `O(1)`
 
----
 
 ## Solution 3: Using XOR
 
@@ -151,7 +146,6 @@ class Solution:
 - **Time Complexity:** `O(n)`
 - **Space Complexity:** `O(1)`
 
----
 
 ## Summary
 
