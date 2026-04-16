@@ -48,6 +48,7 @@
 | [0001-two-sum](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0001-two-sum) |
 | [0088-merge-sorted-array](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0088-merge-sorted-array) |
 | [2570-merge-two-2D-arrays-by-summing-values](https://github.com/AqibNiazi/leetcode/tree/main/2570-merge-two-2D-arrays-by-summing-values) |
+| [0905-sort-array-by-parity](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0905-sort-array-by-parity) |
 | [0189-rotate-array](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0189-rotate-array) |
 | [0027-remove-element](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0027-remove-element) |
 | [0167-two-sum-II-Input-array-is-sorted](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0167-two-sum-II-Input-array-is-sorted) |
