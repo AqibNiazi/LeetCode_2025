@@ -132,7 +132,7 @@ class Solution:
 - **Space Complexity:** `O(1)`
   - In-place solution (optimal)
 
-# 🚀 Key Takeaways
+# Key Takeaways
 
 - Brute force approach is simple but uses extra space
 - Two-pointer approach is:
@@ -144,7 +144,7 @@ class Solution:
   - Partitioning problems
   - QuickSort partition logic
 
-# 🏁 Final Verdict
+# Final Verdict
 
 | Approach     | Time | Space | Notes                        |
 | ------------ | ---- | ----- | ---------------------------- |
