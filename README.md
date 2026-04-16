@@ -32,15 +32,6 @@
 | [0205-isomorphic-strings](https://github.com/AqibNiazi/leetcode/tree/main/0205-isomorphic-strings) |
 | [0796-rotate-string](https://github.com/AqibNiazi/leetcode/tree/main/0796-rotate-string) |
 
-## Stacks
-|  |
-| ------------- |
-| [0155-min-stack](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0155-min-stack) |
-| [0020-valid-parentheses](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0020-valid-parentheses) |
-| [0844-backspace-string-compare](https://github.com/AqibNiazi/leetcode/tree/main/0844-backspace-string-compare) |
-| [1544-make-the-string-great](https://github.com/AqibNiazi/leetcode/tree/main/1544-make-the-string-great) |
-| [0921-minimum-add-to-make-parentheses-valid](https://github.com/AqibNiazi/leetcode/tree/main/0921-minimum-add-to-make-parentheses-valid) |
-
 ## Hashmaps
 |  |
 | ------------- |
@@ -50,15 +41,6 @@
 | [0496-next-greater-element-I](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0496-next-greater-element-I) |
 | [0268-missing-number](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0268-missing-number) |
 | [1832-sentence-Is-pangram](https://github.com/AqibNiazi/LeetCode_2025/tree/main/1832-sentence-Is-pangram) |
-
-## Linked List
-|  |
-| ------------- |
-| [0206-reverse-linked-list](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0206-reverse-linked-list) |
-| [0876-middle-of-the-linked-list](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0876-middle-of-the-linked-list) |
-| [0141-linked-list-cycle](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0141-linked-list-cycle) |
-| [0019-remove-nth-node-from-end-of-list](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0019-remove-nth-node-from-end-of-list) |
-| [0021-merge-two-sorted-lists](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0021-merge-two-sorted-lists) |
 
 ## Two Pointers On Arrays
 |  |
@@ -82,6 +64,26 @@
 | [1768-merge-strings-alternately](https://github.com/AqibNiazi/LeetCode_2025/tree/main/1768-merge-strings-alternately) |
 | [0344-reverse-string](https://github.com/AqibNiazi/leetcode/tree/main/0344-reverse-string) |
 <!---LeetCode Topics End-->
+
+## Stacks
+|  |
+| ------------- |
+| [0155-min-stack](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0155-min-stack) |
+| [0020-valid-parentheses](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0020-valid-parentheses) |
+| [0844-backspace-string-compare](https://github.com/AqibNiazi/leetcode/tree/main/0844-backspace-string-compare) |
+| [1544-make-the-string-great](https://github.com/AqibNiazi/leetcode/tree/main/1544-make-the-string-great) |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/AqibNiazi/leetcode/tree/main/0921-minimum-add-to-make-parentheses-valid) |
+
+
+## Linked List
+|  |
+| ------------- |
+| [0206-reverse-linked-list](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0206-reverse-linked-list) |
+| [0876-middle-of-the-linked-list](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0876-middle-of-the-linked-list) |
+| [0141-linked-list-cycle](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0141-linked-list-cycle) |
+| [0019-remove-nth-node-from-end-of-list](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0019-remove-nth-node-from-end-of-list) |
+| [0021-merge-two-sorted-lists](https://github.com/AqibNiazi/LeetCode_2025/tree/main/0021-merge-two-sorted-lists) |
+
 
 ## Two Pointers On Linked List
 |  |
