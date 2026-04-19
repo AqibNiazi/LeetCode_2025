@@ -64,6 +64,7 @@
 | [2000-reverse-prefix-of-word](https://github.com/AqibNiazi/leetcode/tree/main/2000-reverse-prefix-of-word) |
 | [1768-merge-strings-alternately](https://github.com/AqibNiazi/LeetCode_2025/tree/main/1768-merge-strings-alternately) |
 | [0344-reverse-string](https://github.com/AqibNiazi/leetcode/tree/main/0344-reverse-string) |
+| [1754-largest-merge-of-two-strings](https://github.com/AqibNiazi/leetcode/tree/main/1754-largest-merge-of-two-strings) |
 <!---LeetCode Topics End-->
 
 ## Stacks
