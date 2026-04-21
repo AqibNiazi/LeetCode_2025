@@ -1,12 +1,12 @@
 # 1832. Check if the Sentence Is Pangram
 
-## 📝 Problem
+## Problem
 
 A **pangram** is a sentence where every letter of the English alphabet appears at least once.
 
 Given a string `sentence` containing only lowercase English letters, return `true` if `sentence` is a pangram, or `false` otherwise.
 
-### 📌 Example 1:
+### Example 1:
 
 ```
 
@@ -15,7 +15,7 @@ Output: true
 
 ```
 
-### 📌 Example 2:
+### Example 2:
 
 ```
 
@@ -24,16 +24,16 @@ Output: false
 
 ```
 
-### 🔒 Constraints:
+### Constraints:
 
 - `1 <= sentence.length <= 1000`
 - `sentence` consists of lowercase English letters.
 
-# 🚀 Solutions
+# Solutions
 
 # 1️⃣ Brute Force Solution
 
-## 💡 Intuition
+## Intuition
 
 To check if a sentence is a pangram, we must ensure that **all 26 lowercase English letters** are present.
 
@@ -44,7 +44,7 @@ A straightforward approach is:
 
 If any character is missing → return `False`
 
-## ⚙️ Approach
+## Approach
 
 1. Loop through all characters from `'a'` to `'z'`
 2. For each character:
@@ -52,12 +52,12 @@ If any character is missing → return `False`
 3. If any character is not found → return `False`
 4. If all characters are found → return `True`
 
-## ⏱ Complexity
+## Complexity
 
 - **Time Complexity:** `O(26 * n) ≈ O(n)`
 - **Space Complexity:** `O(1)`
 
-## 💻 Code
+## Code
 
 ```python
 class Solution:
@@ -70,7 +70,7 @@ class Solution:
 
 # 2️⃣ Better Approach — Using Set
 
-## 💡 Intuition
+## Intuition
 
 A **set** only stores unique elements.
 
@@ -78,19 +78,19 @@ So if the sentence is a pangram:
 
 - It must contain **all 26 unique characters**
 
-## ⚙️ Approach
+## Approach
 
 1. Convert the string into a set
 2. Count unique characters
 3. If size of set is `26` → return `True`
 4. Otherwise → return `False`
 
-## ⏱ Complexity
+## Complexity
 
 - **Time Complexity:** `O(n)`
 - **Space Complexity:** `O(26) ≈ O(1)`
 
-## 💻 Code
+## Code
 
 ```python
 class Solution:
