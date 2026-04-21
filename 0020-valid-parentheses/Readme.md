@@ -1,4 +1,4 @@
-# Valid Parentheses – LeetCode 20
+# Valid Parentheses
 
 ## Problem
 
@@ -24,9 +24,7 @@ A string is considered valid if:
 • `1 <= s.length <= 10^4`
 • Contains only `'()[]{}'`
 
----
-
-## Solution (LeetCode-Post Style)
+## Solution 
 
 ### Intuition
 
@@ -34,7 +32,6 @@ We need to ensure every closing bracket matches the most recent opening bracket.
 
 If all brackets match perfectly and the stack is empty at the end, the string is valid.
 
----
 
 ### Approach
 
@@ -52,8 +49,6 @@ If all brackets match perfectly and the stack is empty at the end, the string is
 
 4. After the loop, if the stack is empty, return `True`; otherwise `False`.
 
----
-
 ### Complexity
 
 - **Time Complexity: O(n)**
@@ -61,7 +56,6 @@ If all brackets match perfectly and the stack is empty at the end, the string is
 - **Space Complexity: O(n)**
   In the worst case (all opening brackets), they all go onto the stack.
 
----
 
 ## Code (Python)
 
