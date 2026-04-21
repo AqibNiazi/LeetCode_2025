@@ -1,6 +1,6 @@
 # 2000. Reverse Prefix of Word
 
-## 📝 Problem Description
+## Problem Description
 
 Given a **0-indexed string** `word` and a character `ch`, reverse the segment of `word` that starts at index `0` and ends at the **first occurrence** of `ch` (inclusive).
 
@@ -53,13 +53,13 @@ word = "abcd", ch = "z"
 "abcd"
 ```
 
-## 📌 Constraints
+## Constraints
 
 - `1 <= word.length <= 250`
 - `word` consists of lowercase English letters
 - `ch` is a lowercase English letter
 
-# 🧠 Approach 1: String Slicing
+# Approach 1: String Slicing
 
 ## Intuition
 
@@ -96,7 +96,7 @@ class Solution:
 - **Space Complexity:** `O(n)`
   - New string is created
 
-# ⚡ Approach 2: Two Pointers (In-place Simulation)
+# Approach 2: Two Pointers (In-place Simulation)
 
 ## Intuition
 
@@ -152,7 +152,7 @@ class Solution:
 - **Space Complexity:** `O(n)`
   - List conversion
 
-# 🚀 Key Takeaways
+# Key Takeaways
 
 - **String slicing** is concise and Pythonic
 - **Two pointers** give better control and are language-independent
